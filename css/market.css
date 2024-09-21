@@ -1,9 +1,14 @@
-.card {
-    transition: transform 0.5s ease;
+.html{
+  font-size: 62.5%;
+}
 
+.card {
+    transition: transform 0.5s ease;  
+    
   }
   
-  .card:hover {
-    transform: scale(1.05);
-    overflow: hidden;
-  }
+.card:hover {
+  transform: scale(1.05);
+  overflow: hidden;
+}
+
