@@ -67,51 +67,89 @@
         <h1 class="text-center">
             Seu Perfil
         </h1>
-        <section class="row text-md-center text-lg-start">
-            <div class="col-md-6 col-lg-4 profile-pic my-3">
+        <section class="row text-startgap-lg-1">
+            <div class="col-md-12 col-lg-4 profile-pic my-3">
                 <div class="d-flex align-items-center justify-content-center">
                     <img src="../images/profile_images/Foto aleatoria.jpg" alt="Sua Foto de Perfil"
                         class="img-fluid rounded-pill">
                 </div>
             </div>
-            <div class="col-md-6 col-lg-8 rounded bg-light p-3 my-3">
+            <div class="col-md-12 col-lg-7 rounded bg-light p-3 my-2">
                 <h4>DADOS PESSOAIS</h4>
                 <hr class="my-2">
                 <div class="row">
-                    <div class="col-6 col-md-12 col-lg-6">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                         <label for="nome" class="form-label fs-4 my-0">Nome Completo</label>
                         <p id="nome" class="fs-5">Wendell dos Santos Silva</p>
                     </div>
-                    <div class="col-6 col-md-12 col-lg-6">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                         <label for="email" class="form-label fs-4 my-0">Email</label>
                         <p id="email" class="fs-5">wendell@example.com</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6 col-md-12 col-lg-6">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                         <label for="data-nascimento" class="form-label fs-4 my-0">Data de Nascimento</label>
                         <p id="data-nascimento" class="fs-5">12/05/1995</p>
                     </div>
-                    <div class="col-6 col-md-12 col-lg-6">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                         <label for="telefone" class="form-label fs-4 my-0">Telefone</label>
                         <p id="telefone" class="fs-5">(11) 99999-9999</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6 col-md-12 col-lg-6">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                         <label for="equipe" class="form-label fs-4 my-0">Equipe Favorita</label>
                         <p id="equipe" class="fs-5">Tech-Mahindra</p>
                     </div>
-                    <div class="col-6 col-md-12 col-lg-6">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                         <label for="dado" class="form-label fs-4 my-0">Dado</label>
                         <p id="dado" class="fs-5">xxxxxxx</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 rounded bg-light p-3 my-2">
+            <div class="col-md-12 col-lg-4 rounded bg-light p-3 my-2">
                 <h4>BIOGRAFIA</h4>
                 <hr class="my-2">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            </div>
+            <!-- <div class="col-md-6 col-lg-3 rounded bg-light p-3 my-2">
+                <h4>HISTÓRICO</h4>
+                <hr class="my-2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            </div>
+            <div class="col-md-6 offset-lg-1 col-lg-3 rounded bg-light p-3 my-2">
+                <h4>HISTÓRICO</h4>
+                <hr class="my-2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            </div> -->
+            <div class="accordion col-lg-3 mx-0 mt-1 p-1" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Pontuação
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> 
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="accordion col-lg-3 mx-0 mt-1 p-1" id="accordionExample2">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                      <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </section>
     </main>
