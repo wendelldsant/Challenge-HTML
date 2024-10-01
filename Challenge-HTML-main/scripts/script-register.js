@@ -1,11 +1,14 @@
 // ########################## CONST'S ##########################
 const btn_cadastrar = document.getElementById('btn-cadastrar');
+const special_caracteres = ['*', '&', '%', '$', '#', '@', '!'];
+
 const char_number_id = 5;
 // ########################## ERROR MESSAGES ##########################
 const error_msg_username = document.getElementById('error-message-username');
 const error_msg_name = document.getElementById('error-message-name');
 const error_msg_password = document.getElementById('error-message-password');
 const error_msg_password_confirm = document.getElementById('error-message-password-confirm');
+const error_msg_foto = document.getElementById('error-message-foto');
 // ############################# ID'S ##############################
 const btn_login = document.getElementById('btn-login');
 const btn_cadastreSe = document.getElementById('btnCadastreSe');
@@ -13,6 +16,8 @@ const name_id = document.getElementById('name');
 const username_id = document.getElementById('username');
 const senha_id = document.getElementById('password');
 const senha_confirm_id = document.getElementById('password-confirm');
+const foto_id = document.getElementById('profile-pic');
+
 // ############################ DECLARAÇÃO FUNÇÕES ############################
 
 //função utilizada quando os dados inseridos passam por uma validação, altera cor do campo e apaga mensagem de erro
@@ -257,6 +262,7 @@ btncadastrar_se.addEventListener('click', function(event){
                 username: username_id.value,
                 name: name_id.value,
                 senha: senha_id.value,
+                foto: foto_id.value,
                 profileType: 'Cadastrado'
             }
             lista_users.push(new_user);  //guardou na lista de usuarios
@@ -266,7 +272,7 @@ btncadastrar_se.addEventListener('click', function(event){
             <div class="container">
             <h3>Cadastro realizado!</h3>
                 <div class="button-container">
-                    <button type="submit"><a href="live-page.html" style = "text-decoration: none; color: #ffffff">Acompanhe as transmissões!</a></button>
+                    <button type="submit"><a href="../pages/live.html" style = "text-decoration: none; color: #ffffff">Acompanhe as transmissões!</a></button>
                 </div>
             </div>
             `
